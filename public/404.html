@@ -11,10 +11,15 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Fumi Sato's portfolio | f.Sato</title>
     <script>
-      (function (l) {
-        l.replace(l.origin + "/#" + l.pathname);
-      })(window.location);
+      let secmentCount = 1; // [2018/2/2 Added]: 変数が抜けていると指摘がありましたので，追加しました．
+    let l = window.location;
+    let port = l.port ? ':' + l.port : ''
+    l.replace(
+        `${l.protocol}//${l.hostname}${port}/?p=${l.pathname.split('/').slice(0, 1 + segmentCount).join('/')}`
+    )
     </script>
   </head>
-  <body></body>
+  <body>
+
+  </body>
 </html>
