@@ -2,6 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from '../router/index.js'
 
-require('@/assets/scss/style.scss')
+require('@/assets/scss/style.css')
 
 createApp(App).use(router).mount('#app')

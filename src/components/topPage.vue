@@ -17,20 +17,18 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-.headLineWrap {
-  h1 {
-    display: inline-block;
-    font-size: 5.4em;
-    background: #333;
-    color: #FFC800;
-    font-family: 'Anton', sans-serif;
-    padding: 3px;
-    }
-  h2 {
-    font-size: 4.5em;
-    color: #333;
-    font-family: 'Anton', sans-serif;
-  }
+<style scoped>
+.headLineWrap h1 {
+  display: inline-block;
+  font-size: 5.4em;
+  background: #333;
+  color: #FFC800;
+  font-family: "Anton", sans-serif;
+  padding: 3px;
+}
+.headLineWrap h2 {
+  font-size: 4.5em;
+  color: #333;
+  font-family: "Anton", sans-serif;
 }
 </style>

@@ -24,29 +24,27 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
-.tab {
-  h3 {
-      background: #333;
-      color: #FFC800;
-      font-size: 4.2em;
-      display: inline-block;
-      padding: 3px;
-      font-family: 'Anton', sans-serif;
+  <style scoped>
+  .tab h3 {
+    background: #333;
+    color: #FFC800;
+    font-size: 4.2em;
+    display: inline-block;
+    padding: 3px;
+    font-family: "Anton", sans-serif;
   }
-  .txtArea {
+  .tab .txtArea {
     margin: 15px 0 30px 0;
     background: #333;
     color: #fff;
     padding: 12px;
-    h4 {
-      font-size: 3.2em;
-    }
-    p {
-      font-size: 1.5em;
-      word-wrap: break-word;
-    }
   }
-}
+  .tab .txtArea h4 {
+    font-size: 3.2em;
+  }
+  .tab .txtArea p {
+    font-size: 1.5em;
+    word-wrap: break-word;
+  }
 </style>
 

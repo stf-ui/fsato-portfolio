@@ -33,58 +33,58 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 header {
-  width : 100%;
-  margin : 0 auto;
-  ul {
+  width: 100%;
+  margin: 0 auto;
+}
+header ul {
   list-style-type: none;
-  margin : 0;
-  padding : 0;
-  font-size : 1em;
-  font-weight : 900;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 900;
   letter-spacing: 2px;
   text-align: center;
-    li {
-      display : inline-block;
-      width: 20%;
-      height: 60px;
-      box-sizing: border-box;
-      border-left: solid 1px #FFE02B;
-      a {
-        display : block;
-        position : relative;
-        text-decoration: none;
-        color : #fff;
-        background: #FFC800;
-        line-height: 3;
-        font-size: 1.5em;
-        z-index: 1;
-        height: 100%;
-        font-family: 'Anton', sans-serif;
-        &::before {
-          content: '';
-          display : block;
-          position : absolute;
-          z-index : 1;
-          top : 0;
-          left : 0;
-          width : 0;
-          height : 100%;
-          opacity : 0;
-        }
-        &.router-link-active {
-          color: transparent;
-          background: transparent;
-          transition : all .3s ease-in-out;
-          &::before {
-            width : 100%;
-            opacity : 1;
-          }
-        }
-      }
-    }
-  }
+}
+header ul li {
+  display: inline-block;
+  width: 20%;
+  height: 60px;
+  box-sizing: border-box;
+  border-left: solid 1px #FFE02B;
+}
+header ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  background: #FFC800;
+  line-height: 3;
+  font-size: 1.5em;
+  z-index: 1;
+  height: 100%;
+  font-family: "Anton", sans-serif;
+}
+header ul li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+}
+header ul li a.router-link-active {
+  color: transparent;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+header ul li a.router-link-active::before {
+  width: 100%;
+  opacity: 1;
 }
 
 </style>

@@ -31,12 +31,7 @@ const routes = [
     path: '/contact',
     name: 'contactPage',
     component: contactPage
-  },
-  // {
-  //   path: '/thanks',
-  //   name: 'thanks',
-  //   component: thanksPage
-  // }
+  }
 ]
 
 const router = createRouter({
