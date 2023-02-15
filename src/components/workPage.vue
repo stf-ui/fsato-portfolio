@@ -18,7 +18,7 @@
                   <p>{{ lists.detail }}</p>
                   <p>{{ lists.language }}</p>
                   <p>{{ lists.other }}</p>
-                  <div class="btnWrap">
+                  <div class="btn">
                     <a :href="lists.github">CODE</a>
                   </div>
                 </div>
