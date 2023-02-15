@@ -110,6 +110,9 @@ export default {
   text-decoration: none;
   font-size: 1.5em;
 }
+.tab ul li .txtWrap .btn {
+  margin: 15px 0;
+}
 .tab ul li .txtWrap .btn a:hover {
     background: #FFC800;
     color: #333;
@@ -140,7 +143,7 @@ export default {
   margin-top: 42px;
   background: #333;
   color: #fff;
-  padding: 6px;
+  padding: 12px;
   width: 100%;
   word-wrap: break-word;
 }
