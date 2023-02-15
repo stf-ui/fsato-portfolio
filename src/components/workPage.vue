@@ -102,7 +102,7 @@ export default {
   align-items: center;
   margin: 0 auto;
   max-width: 280px;
-  padding: 10px 25px;
+  padding: 3px 12px;
   color: #FFC800;
   transition: 0.3s ease-in-out;
   border: solid 1px #FFC800;
