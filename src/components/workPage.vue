@@ -18,9 +18,9 @@
                   <p>{{ lists.detail }}</p>
                   <p>{{ lists.language }}</p>
                   <p>{{ lists.other }}</p>
-                </div>
-                <div class="btnWrap">
-                  <a :href="lists.github">CODE</a>
+                  <div class="btnWrap">
+                    <a :href="lists.github">CODE</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -106,6 +106,9 @@ export default {
   color: #FFC800;
   transition: 0.3s ease-in-out;
   border: solid 1px #FFC800;
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 .tab ul li .txtWrap .btn a:hover {
     background: #FFC800;

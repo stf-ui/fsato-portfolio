@@ -138,7 +138,7 @@ export default {
   background-color: #FFC800;
   border: solid 1px #FFC800;
   padding: 9px 90px;
-  transition: 0.4s;
+  transition: .3s;
   cursor: pointer;
 }
 .tab .txtArea .submit input:hover {
