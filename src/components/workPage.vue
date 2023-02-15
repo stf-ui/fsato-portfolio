@@ -19,6 +19,9 @@
                   <p>{{ lists.language }}</p>
                   <p>{{ lists.other }}</p>
                 </div>
+                <div class="btnWrap">
+                  <a :href="lists.github">CODE</a>
+                </div>
               </div>
             </div>
         </li>
@@ -35,23 +38,26 @@ export default {
         { name : "さよなら 平成",
           url:"https://stf-ui.github.io/sayonara_heisei/",
           img:"https://stf-ui.github.io/sayonara_heisei/image/bnr.png",
-          detail:"平成の『懐メロ』で振り返ることで世代を超えたコミュケーションのお手伝いができないか考え、作成しました。ページ読込ごとにランダムで曲名が表示されます",
+          detail:"平成の『懐メロ』で振り返ることで世代を超えたコミュケーションのお手伝いができないか考え、作成しました。ページ読込ごとにランダムで曲名が表示されます。",
           language:"HTML/CSS/Javascript/jQuery",
-          other:"PhotoShop"
+          other:"PhotoShop",
+          github:"https://github.com/stf-ui/sayonara_heisei"
         },
         { name : "推しと作業ができるタイマー",
           url:"https://stf-ui.github.io/pomodoro_timer/",
           img:"https://stf-ui.github.io/pomodoro_timer/image/bnr.png",
-          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を25分ごとに『推し』が労ってくれるタイマーという形で叶えました",
+          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を25分ごとに『推し』が労ってくれるタイマーという形で叶えました。",
           language:"HTML/Sass/Javascript",
-          other:"PhotoShop"
+          other:"PhotoShop",
+          github:"https://github.com/stf-ui/pomodoro_timer"
         },
         { name : "ポートフォリオ",
-          url:"/",
-          detail:"近年のトレンドである、『レトロポップ』な要素を取り入れ、現在学習中のVueで作成しました",
+          url:"https://stf-ui.github.io/fsato-portfolio/",
+          detail:"近年のトレンドである、『レトロポップ』な要素を取り入れ、現在学習中のVueで作成しました。",
           img:require("./img/bnr.png"),
           language:"HTML/CSS/Vue",
-          other:"PhotoShop/素材 photolibrary(https://www.photolibrary.jp)"
+          other:"PhotoShop/素材 photolibrary様(https://www.photolibrary.jp)",
+          github:"https://github.com/stf-ui/fsato-portfolio"
         }
       ]
     };
@@ -87,6 +93,39 @@ export default {
   margin-left: 15px;
   width: 50%;
   box-sizing: border-box;
+}
+.tab ul li .txtWrap .btn a {
+  background: #333;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 280px;
+  padding: 10px 25px;
+  color: #FFC800;
+  transition: 0.3s ease-in-out;
+  border: solid 1px #FFC800;
+}
+.tab ul li .txtWrap .btn a:hover {
+    background: #FFC800;
+    color: #333;
+}
+.tab ul li .txtWrap .btn a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #FFC800;
+    border-right: 3px solid #FFC800;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.tab ul li .txtWrap .btn a:hover:after {
+    border-color: #333;
 }
 @media (max-width: 680px) {
   .tab ul li .txtWrap {
@@ -158,19 +197,5 @@ export default {
   .tab .d-flex {
     display: block;
   }
-}
-
-.headLineWrap h1 {
-  display: inline-block;
-  font-size: 5.4em;
-  background: #333;
-  color: #FFC800;
-  font-family: "Anton", sans-serif;
-  padding: 3px;
-}
-.headLineWrap h2 {
-  font-size: 4.5em;
-  color: #333;
-  font-family: "Anton", sans-serif;
 }
 </style>
