@@ -38,13 +38,9 @@ const routes = [
     meta: {  title: "Fumi Sato's portfolio - CONTACT | f.Sato", desc: 'このページは佐藤文へのお問い合わせページです' }
   }
 ]
-const DEFAULT_TITLE = "Fumi Sato's portfolio | f.Sato";
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
-router.afterEach((to, from) => {
-  document.title = to.meta.title || DEFAULT_TITLE
-})
-
 export default router
