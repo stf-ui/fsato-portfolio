@@ -7,7 +7,7 @@
 import menuList from '@/components/menuList.vue'
 export default {
   name: 'App',
-  components: { 
+  components: {
     //使用するコンポーネントの指定
     menuList
   }

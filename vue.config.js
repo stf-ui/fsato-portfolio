@@ -4,3 +4,11 @@ module.exports = defineConfig({
   outputDir: 'docs',
   publicPath: '/fsato-portfolio'
 })
+module.exports = {
+  pages: {
+    index: {
+      entry: "src/main.js",
+      title: "タイトル",
+    }
+  }
+}
