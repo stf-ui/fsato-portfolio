@@ -17,9 +17,9 @@
                 <div class="txtDetailWrap">
                   <h5>■ このサイトについて</h5>
                   <p>{{ lists.detail }}</p>
-                  <h5>■ 使用言語</h5>
+                  <h5>■ 使用している言語など</h5>
                   <p>{{ lists.language }}</p>
-                  <h5>■ MEMO</h5>
+                  <h5>■ その他</h5>
                   <p>{{ lists.other }}</p>
                   <div class="btn">
                     <a :href="lists.github">CODE</a>
@@ -49,7 +49,7 @@ export default {
         { name : "推しと作業ができるタイマー",
           url:"https://stf-ui.github.io/pomodoro_timer/",
           img:"https://stf-ui.github.io/pomodoro_timer/image/bnr.png",
-          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を、25分ごとに『推し』が労ってくれるタイマーという形で叶えました。",
+          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を、25分ごとに『推し』が労ってくれるタイマーという形で叶えました。（スマホ、タブレット向けのページです）",
           language:"HTML/Sass/Javascript",
           other:"バナーやタイトルはPhotoShopで作成しました。",
           github:"https://github.com/stf-ui/pomodoro_timer"
@@ -154,6 +154,9 @@ export default {
 }
 .tab ul li .txtWrap .txtDetailWrap p {
   font-size: 1.1em;
+}
+.tab ul li .txtWrap .txtDetailWrap h5 {
+  font-size: 1.2em;
   font-weight: bold;
 }
 @media (max-width: 680px) {
@@ -168,7 +171,6 @@ export default {
   text-align: center;
   filter: drop-shadow(5px 5px 0 #FFC800);
   width: 100%;
-  box-sizing: border-box;
 }
 .tab ul li .siteTtl::before {
   content: "";
