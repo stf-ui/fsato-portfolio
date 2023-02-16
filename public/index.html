@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+  <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW,NOARCHIVE">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,9 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="description">
+    <meta property="og:title" content="Fumi Sato's portfolio | f.Sato" />
+    <meta property="og:description" content="ここは佐藤文のポートフォリオサイトです" />
+    <meta property="og:type" content="website" />
     <script>
       // location.href を SessionStorage に記録しておく
       sessionStorage.redirect = location.href;

@@ -29,7 +29,7 @@ export default {
     let route = this.$route;
     this.setMeta(route);
   },
-  watch: { 
+  watch: {
     '$route' (route, from) {
       this.setMeta(route);
     }

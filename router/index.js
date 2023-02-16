@@ -10,32 +10,32 @@ const routes = [
     path: '/',
     name: 'topPage',
     component: topPage,
-    meta: { title: "Fumi Sato's portfolio - TOP | f.Sato" }
+    meta: { title: "Fumi Sato's portfolio - TOP | f.Sato", desc: 'ここは佐藤文のポートフォリオサイトです' }
   },
   {
     path: '/profile',
     name: 'profilePage',
     component: profilePage,
-    meta: { title: "Fumi Sato's portfolio - PROFILE | f.Sato", desc: 'ディスクリプションを記述' }
+    meta: { title: "Fumi Sato's portfolio - PROFILE | f.Sato", desc: 'このページは佐藤文のプロフィールページです' }
   },
   {
     path: '/skill',
     name: 'skillPage',
     component: skillPage,
-    meta: { title: "Fumi Sato's portfolio - SKILL | f.Sato" }
+    meta: { title: "Fumi Sato's portfolio - SKILL | f.Sato", desc: 'このページは佐藤文のスキルページです' }
   }
   ,
   {
     path: '/work',
     name: 'workPage',
     component: workPage,
-    meta: { title: "Fumi Sato's portfolio - WORK | f.Sato" }
+    meta: { title: "Fumi Sato's portfolio - WORK | f.Sato", desc: 'このページは佐藤文が学習のために制作した成果物一覧ページです' }
   },
   {
     path: '/contact',
     name: 'contactPage',
     component: contactPage,
-    meta: {  title: "Fumi Sato's portfolio - CONTACT | f.Sato" }
+    meta: {  title: "Fumi Sato's portfolio - CONTACT | f.Sato", desc: 'このページは佐藤文へのお問い合わせページです' }
   }
 ]
 const DEFAULT_TITLE = "Fumi Sato's portfolio | f.Sato";
