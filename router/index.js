@@ -9,28 +9,33 @@ const routes = [
   {
     path: '/',
     name: 'topPage',
-    component: topPage
+    component: topPage,
+    meta: { title: 'ページタイトル1', desc: 'ディスクリプションを記述' }
   },
   {
     path: '/profile',
     name: 'profilePage',
-    component: profilePage
+    component: profilePage,
+    meta: { title: 'ページタイトル2', desc: 'ディスクリプションを記述' }
   },
   {
     path: '/skill',
     name: 'skillPage',
-    component: skillPage
+    component: skillPage,
+    meta: { title: 'ページタイトル3', desc: 'ディスクリプションを記述' }
   }
   ,
   {
     path: '/work',
     name: 'workPage',
-    component: workPage
+    component: workPage,
+    meta: { title: 'ページタイトル4', desc: 'ディスクリプションを記述' }
   },
   {
     path: '/contact',
     name: 'contactPage',
-    component: contactPage
+    component: contactPage,
+    meta: { title: 'ページタイトル5', desc: 'ディスクリプションを記述' }
   }
 ]
 
