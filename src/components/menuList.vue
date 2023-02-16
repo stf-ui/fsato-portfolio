@@ -11,7 +11,7 @@
     </nav>
   </header>
   <div class="bgWrap">
-    <video autoplay muted loop playsinline>
+    <video autoplay muted loop playsinline poster="../components/img/bg.jpg">
         <source src="../components/video/bg.mp4" />
     </video>
   </div>
