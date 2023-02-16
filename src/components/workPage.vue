@@ -73,7 +73,7 @@ export default {
 }
 .tab ul li {
   color: #333;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
 }
 .tab ul li .imgWrap {
   width: 50%;
@@ -151,13 +151,16 @@ export default {
   padding: 12px;
   width: 100%;
   word-wrap: break-word;
+  box-sizing: border-box;
 }
 .tab ul li .txtWrap .txtDetailWrap p {
   font-size: 1.1em;
+  margin-bottom: 6px;
 }
 .tab ul li .txtWrap .txtDetailWrap h5 {
   font-size: 1.2em;
   font-weight: bold;
+  margin-bottom: 3px;
 }
 @media (max-width: 680px) {
   .tab ul li .txtWrap .txtDetailWrap {
@@ -170,7 +173,6 @@ export default {
   padding: 9px;
   text-align: center;
   filter: drop-shadow(5px 5px 0 #FFC800);
-  width: 100%;
 }
 .tab ul li .siteTtl::before {
   content: "";
@@ -187,6 +189,7 @@ export default {
 .tab ul li .siteTtl h4 {
   color: #FFC800;
   font-size: 1.2em;
+  font-weight: bold;
 }
 @media (max-width: 680px) {
   .tab ul li .siteTtl.pc-view {

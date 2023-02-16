@@ -54,6 +54,9 @@ header ul li {
   box-sizing: border-box;
   border-left: solid 1px #FFE02B;
 }
+header ul li:last-child {
+  border-left: none;
+}
 header ul li a {
   display: block;
   position: relative;
