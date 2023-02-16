@@ -49,7 +49,7 @@ export default {
         { name : "推しと作業ができるタイマー",
           url:"https://stf-ui.github.io/pomodoro_timer/",
           img:"https://stf-ui.github.io/pomodoro_timer/image/bnr.png",
-          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を、25分ごとに『推し』が労ってくれるタイマーという形で叶えました。（スマホ、タブレット向けのページです）",
+          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を、25分ごとに『推し』が労ってくれるタイマーという形で叶えました。",
           language:"HTML/Sass/Javascript",
           other:"バナーやタイトルはPhotoShopで作成しました。",
           github:"https://github.com/stf-ui/pomodoro_timer"
