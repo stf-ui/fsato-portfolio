@@ -15,8 +15,11 @@
                   <h4>{{ lists.name }}</h4>
                 </div>
                 <div class="txtDetailWrap">
+                  <h5>■ このサイトについて</h5>
                   <p>{{ lists.detail }}</p>
+                  <h5>■ 使用言語</h5>
                   <p>{{ lists.language }}</p>
+                  <h5>■ MEMO</h5>
                   <p>{{ lists.other }}</p>
                   <div class="btn">
                     <a :href="lists.github">CODE</a>
@@ -40,15 +43,15 @@ export default {
           img:"https://stf-ui.github.io/sayonara_heisei/image/bnr.png",
           detail:"平成の『懐メロ』で振り返ることで世代を超えたコミュケーションのお手伝いができないか考え、作成しました。ページ読込ごとにランダムで曲名が表示されます。",
           language:"HTML/CSS/Javascript/jQuery",
-          other:"PhotoShop",
+          other:"ロゴやバナーはPhotoShopで作成しました。",
           github:"https://github.com/stf-ui/sayonara_heisei"
         },
         { name : "推しと作業ができるタイマー",
           url:"https://stf-ui.github.io/pomodoro_timer/",
           img:"https://stf-ui.github.io/pomodoro_timer/image/bnr.png",
-          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を25分ごとに『推し』が労ってくれるタイマーという形で叶えました。",
+          detail:"「1行コードを書くごとに『推し』に褒められたい……」という夢を、25分ごとに『推し』が労ってくれるタイマーという形で叶えました。",
           language:"HTML/Sass/Javascript",
-          other:"PhotoShop",
+          other:"バナーやタイトルはPhotoShopで作成しました。",
           github:"https://github.com/stf-ui/pomodoro_timer"
         },
         { name : "ポートフォリオ",
@@ -56,7 +59,7 @@ export default {
           detail:"近年のトレンドである、『レトロポップ』な要素を取り入れ、現在学習中のVueで作成しました。",
           img:require("./img/bnr.png"),
           language:"HTML/CSS/Vue",
-          other:"PhotoShop/素材 photolibrary様(https://www.photolibrary.jp)",
+          other:"バナーはPhotoShopで作成しました。動画素材は、photolibrary様(https://www.photolibrary.jp)よりお借りしました。",
           github:"https://github.com/stf-ui/fsato-portfolio"
         }
       ]
@@ -77,11 +80,13 @@ export default {
   max-width: 240px;
   height: auto;
   box-sizing: border-box;
+  background: #333;
 }
 .tab ul li .imgWrap img {
   width: 100%;
   height: auto;
   border: #333 solid 1px;
+  box-sizing: border-box;
 }
 @media (max-width: 680px) {
   .tab ul li .imgWrap {
@@ -162,6 +167,8 @@ export default {
   padding: 9px;
   text-align: center;
   filter: drop-shadow(5px 5px 0 #FFC800);
+  width: 100%;
+  box-sizing: border-box;
 }
 .tab ul li .siteTtl::before {
   content: "";
