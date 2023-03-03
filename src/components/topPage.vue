@@ -12,7 +12,7 @@ export default {
   data () {
     return {
       tittle: "Fumi Sato's portfolio",
-      position:'Front Egineer / Coder'
+      position:'Front-end Egineer / Coder'
     }
   }
 }
